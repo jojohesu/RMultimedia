@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,29 +19,29 @@
       background: rgb(238,174,202);
       background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
-
     .centrar-audio {
-      width: 30%;
-    height: 43%;
       display: block;
-      margin: 20px auto 0;
-      margin-bottom: 30px; /* Espacio entre videos */
-      display: block; /* Asegura que cada video esté en una nueva línea */
+      margin: auto; /* Centra el reproductor */
+      margin-bottom: 30px;
+    
   }
+ 
 
   h1 {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color:rgba(114, 14, 196, 0.349) ;
-    margin: 3px;
-    font-size: 3vw; /* El tamaño cambia según el ancho de la pantalla */
+    margin: 18px;
+    font-size: 4vw; /* El tamaño cambia según el ancho de la pantalla */
   }
   .centrar-video {
     width: 30%;
       display: block;
       margin: auto;
       margin-bottom: 30px; /* Espacio entre videos */
-      display: block; /* Asegura que cada video esté en una nueva línea */
-  }
+  display: block; /* Asegura que cada video esté en una nueva línea */
+ 
+}
 
   .centrar-video2{
     width: 30%;
@@ -51,25 +51,22 @@
       display: block; /* Asegura que cada video esté en una nueva línea */
   }
 
-
 </style>
 <body>
     <main>
       <h1>MULTIMEDIA EN HTML</h1>
-      <audio controls  class="centrar-audio">
-        <source src="audio.mp3" type="audio/mpeg">
-      </audio>
-      
-      <iframe class="centrar-video" width="560" height="315" src="https://www.youtube.com/embed/wUSul90nFDI?si=owQ9W6IiJu0Qxty_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      
-      <video class="centrar-video2" controls width="600">
-        <source src="video.mp4" type="video/mp4">
-        Tu navegador no soporta videos.
-    </video>
-    
-    
     </main>
-   
+    <audio controls class="centrar-audio">
+        <source src="audio.mp3" type="audio/mpeg" >
+    </audio>
+    <div>
+    <iframe class="centrar-video" width="560" height="315" src="https://www.youtube.com/embed/wUSul90nFDI?si=owQ9W6IiJu0Qxty_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+    <video class="centrar-video2" controls width="600">
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+  </video>
+  </div>
     <div id="particles-js"></div>
     <script src="particles.min.js"></script>
     <script>
